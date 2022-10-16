@@ -1,7 +1,7 @@
 name: KPMTester
 version: '${project.version}'
 main: net.kunmc.lab.kpmtester.KPMTester
-api-version: 1.19
+api-version: 1.16
 
 author: Peyang
 description: KPMTester
