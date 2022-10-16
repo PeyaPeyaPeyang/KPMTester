@@ -1,0 +1,9 @@
+name: KPMTester
+version: '${project.version}'
+main: net.kunmc.lab.kpmtester.KPMTester
+api-version: 1.19
+
+author: Peyang
+description: KPMTester
+website: https://peya.tokyo
+prefix: kpmtester
