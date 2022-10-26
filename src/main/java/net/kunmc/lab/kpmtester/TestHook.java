@@ -8,7 +8,7 @@ import net.kunmc.lab.kpm.hook.hooks.PluginUninstallHook;
 
 public class TestHook extends KPMHookRecipient
 {
-    protected TestHook(KPMDaemon daemon)
+    public TestHook(KPMDaemon daemon)
     {
         super(daemon);
     }
