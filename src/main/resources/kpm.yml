@@ -1,4 +1,9 @@
-kpm: 3.0.0-pre1
+kpm: 3.0.0-pre6
 update: gh>PeyaPeyaPeyang/KPMTestedr
 
 hooks: [net.kunmc.lab.kpmtester.TestHook]
+
+recipes:
+  - kpmtest_withkey
+  - kpmtest_dummy3
+  - kpmtest_fullkey:dummy4

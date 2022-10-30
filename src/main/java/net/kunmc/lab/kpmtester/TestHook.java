@@ -5,6 +5,8 @@ import net.kunmc.lab.kpm.hook.HookListener;
 import net.kunmc.lab.kpm.hook.KPMHookRecipient;
 import net.kunmc.lab.kpm.hook.hooks.PluginInstalledHook;
 import net.kunmc.lab.kpm.hook.hooks.PluginUninstallHook;
+import net.kunmc.lab.kpm.hook.hooks.RecipesUnregisteringHook;
+import org.bukkit.Keyed;
 
 public class TestHook extends KPMHookRecipient
 {
@@ -35,4 +37,24 @@ public class TestHook extends KPMHookRecipient
         System.out.println("Plugin: " + hook.getPluginDescription());
     }
 
+    @HookListener
+    public void onRecipeSearching(RecipesUnregisteringHook.Searching hook)
+    {
+        System.out.println("Recipe.Searching fired!");
+        System.out.println("Targets: " + String.join(",", hook.getTargetNamespaces()));
+    }
+
+    @HookListener
+    public void onRecipeUnregistering(RecipesUnregisteringHook.Pre hook)
+    {
+        System.out.println("Recipe.Pre fired!");
+        System.out.println("Target: " + ((Keyed) hook.getRecipe()).getKey());
+    }
+
+    @HookListener
+    public void onRecipeUnregistered(RecipesUnregisteringHook.Post hook)
+    {
+        System.out.println("Recipe.Post fired!");
+        System.out.println("Target: " + ((Keyed) hook.getRecipe()).getKey());
+    }
 }
