@@ -1,5 +1,5 @@
 kpm: 3.0.0-pre6
-update: gh>PeyaPeyaPeyang/KPMTestedr
+update: gh>PeyaPeyaPeyang/KPMTester
 
 hooks: [net.kunmc.lab.kpmtester.TestHook]
 
