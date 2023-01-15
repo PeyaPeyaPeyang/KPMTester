@@ -76,9 +76,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.TeamKUN.TeamKUNPluginManager</groupId>
-            <artifactId>KPMDaemon</artifactId>
-            <version>c4f794e127</version>
-            <scope>provided</scope>
+            <artifactId>KPMHooks</artifactId>
+            <version>bc0cde40c0</version>
         </dependency>
     </dependencies>
 </project>

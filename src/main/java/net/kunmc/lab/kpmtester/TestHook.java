@@ -1,16 +1,16 @@
 package net.kunmc.lab.kpmtester;
 
-import net.kunmc.lab.kpm.KPMDaemon;
 import net.kunmc.lab.kpm.hook.HookListener;
-import net.kunmc.lab.kpm.hook.KPMHookRecipient;
+import net.kunmc.lab.kpm.hook.KPMHookRecipientBase;
 import net.kunmc.lab.kpm.hook.hooks.PluginInstalledHook;
 import net.kunmc.lab.kpm.hook.hooks.PluginUninstallHook;
 import net.kunmc.lab.kpm.hook.hooks.RecipesUnregisteringHook;
+import net.kunmc.lab.kpm.interfaces.KPMRegistry;
 import org.bukkit.Keyed;
 
-public class TestHook extends KPMHookRecipient
+public class TestHook extends KPMHookRecipientBase
 {
-    public TestHook(KPMDaemon daemon)
+    public TestHook(KPMRegistry daemon)
     {
         super(daemon);
     }

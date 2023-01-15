@@ -7,3 +7,6 @@ author: Peyang
 description: KPMTester
 website: https://peya.tokyo
 prefix: kpmtester
+
+depend:
+  - PeyangATM
