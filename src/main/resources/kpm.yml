@@ -7,6 +7,3 @@ recipes:
   - kpmtest_withkey
   - kpmtest_dummy3
   - kpmtest_fullkey:dummy4
-
-dependencies:
-  PeyangATM: "gh>P2P-Develop/PeyangATM"
